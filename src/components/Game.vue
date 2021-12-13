@@ -1,7 +1,9 @@
-<!--
+
 <template>
+  <div class="game">
+    Espace de jeu
+  </div>
 </template>
--->
 
 <script>
 export default {

@@ -3,3 +3,4 @@
 Rq : le point dans la commande n'est pas un typo.
 Lors de la création, ne pas installer vue-router
 3- Modification du projet de base (Hello par Game)
+4- Attribuer un template à l'instance "game"
