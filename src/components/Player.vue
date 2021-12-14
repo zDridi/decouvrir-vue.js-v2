@@ -1,6 +1,6 @@
 <template>
   <div class="player">
-    Bonjour joueur !
+    {{ welcomeMessage }}
   </div>
 </template>
 
@@ -8,7 +8,8 @@
 export default {
   name: 'player',
   created: function () {
-    console.log('Component created !')
+    this.player = 'Ronaldo'
+    this.welcomeMessage = this.player ? 'Bonjour ' + this.player + ' !' : 'Pas de joueur.'
   }
 
 }

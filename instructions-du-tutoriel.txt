@@ -6,3 +6,4 @@ Lors de la création, ne pas installer vue-router
 4- Attribuer un template à l'instance "game"
 5- Ajout d'un nouveau composant 'score'
 6- Ajout d'un nouveau composant 'player'
+7- Exemple d'accès aux données dans la vue (Message de bienvenue et score dynamique)
