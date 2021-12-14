@@ -5,3 +5,4 @@ Lors de la création, ne pas installer vue-router
 3- Modification du projet de base (Hello par Game)
 4- Attribuer un template à l'instance "game"
 5- Ajout d'un nouveau composant 'score'
+6- Ajout d'un nouveau composant 'player'
