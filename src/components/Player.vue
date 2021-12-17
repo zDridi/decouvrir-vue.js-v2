@@ -1,7 +1,7 @@
 <template>
   <div>
-    <span v-hide>
-      {{ welcomeMessage }}
+    <span  v-html="welcomeMessage" v-hide>
+
     </span>
     <form v-hide>
       <input name="player" placeholder="Entrez votre nom de joueur" v-border:red/>
@@ -15,7 +15,7 @@ export default {
   name: 'player',
   created: function () {
     this.player = ''
-    this.welcomeMessage = this.player ? 'Bonjour ' + this.player + ' !' : 'Pas de joueur'
+    this.welcomeMessage = this.player ? `Bonjour <span class="player">${this.player}</span> !` : `Pas de joueur`
   },
   directives: {
     border: function (el, binding) {
@@ -23,15 +23,12 @@ export default {
     },
     hide: function (el, binding, vnode) {
       let isForm = vnode.tag === 'form'
-      console.log(isForm)
-      let isSpan = vnode.tag === 'span'
-      console.log(isSpan)
+      console.log(vnode.tag)
       let player = vnode.context.player
-      console.log(player)
-
+      console.log(vnode.context.player)
       if (isForm) {
-        el.style.diplay = player ? 'none' : 'block'
-      } else if (isSpan) {
+        el.style.display = player ? 'none' : 'block'
+      } else {
         el.style.display = player ? 'block' : 'none'
       }
     }
