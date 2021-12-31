@@ -3,7 +3,7 @@
     <span  v-html="welcomeMessage" v-hide>
 
     </span>
-    <form v-hide>
+    <form v-hide v-on:submit.prevent="setPlayer">
       <input name="player" placeholder="Entrez votre nom de joueur" v-border:red/>
       <button type="submit" v-border:yellow>Jouer</button>
     </form>
@@ -16,6 +16,11 @@ export default {
   created: function () {
     this.player = ''
     this.welcomeMessage = this.player ? `Bonjour <span class="player">${this.player}</span> !` : `Pas de joueur`
+  },
+  methods: {
+    setPlayer: function (event) {
+      console.log(event)
+    }
   },
   directives: {
     border: function (el, binding) {

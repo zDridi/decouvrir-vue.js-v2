@@ -7,4 +7,5 @@ Lors de la création, ne pas installer vue-router
 5- Ajout d'un nouveau composant 'score'
 6- Ajout d'un nouveau composant 'player'
 7- Exemple d'accès aux données dans la vue (Message de bienvenue et score dynamique)
-8- Exmple de communication grâce aux attributs et exemple d'utilisation des directives
+8- Exemple de communication grâce aux attributs et exemple d'utilisation des directives
+9- Exemple d'insertion du HTML
