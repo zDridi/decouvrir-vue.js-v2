@@ -9,3 +9,4 @@ Lors de la création, ne pas installer vue-router
 7- Exemple d'accès aux données dans la vue (Message de bienvenue et score dynamique)
 8- Exemple de communication grâce aux attributs et exemple d'utilisation des directives
 9- Exemple d'insertion du HTML
+10- Clin d'œil sur le Syntaxe de template (https://fr.vuejs.org/v2/guide/syntax.html#Interpretation-du-HTML)
