@@ -1,7 +1,8 @@
 
 <template>
   <div class="game">
-    <span class="round" v-on:click="clickOnRound">
+    <!-- click.once : l'évènement « click » sera déclenché au plus une fois -->
+    <span class="round" v-on:click.once="clickOnRound">
     </span>
   </div>
 </template>
